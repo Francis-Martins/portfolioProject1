@@ -53,7 +53,7 @@ const About = () => {
                 </div>
               </FadeIn>
 
-              <FadeIn delay={300}>
+              {/* <FadeIn delay={300}>
                 <div className="grid grid-cols-3 gap-8">
                   {ABOUT_STATS.map((stat, index) => (
                     <div key={index} className="relative">
@@ -68,9 +68,9 @@ const About = () => {
                     </div>
                   ))}
                 </div>
-              </FadeIn>
+              </FadeIn> */}
 
-              <FadeIn delay={400}>
+              {/* <FadeIn delay={400}>
                 <button
                   onClick={() => window.open(PERSONAL_INFO.resume, '_blank')}
                   className="inline-flex items-center gap-3 bg-white hover:bg-white/90 text-black rounded-full px-8 py-4 text-base font-medium transition-all duration-300 w-fit group"
@@ -78,13 +78,13 @@ const About = () => {
                   <Download className="w-5 h-5 group-hover:translate-y-0.5 transition-transform duration-300" />
                   Download Resume
                 </button>
-              </FadeIn>
+              </FadeIn> */}
             </div>
           </div>
 
         
         {/* Right Column - Info Grid */}
-        <FadeIn delay ={200}>
+        {/* <FadeIn delay ={200}>
             <div className="grid grid-cols-2 gap-4">
                 <div className="col-span-2 relative group">
                     <div className="absolute inset-0 bg-linear-to-br from primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
@@ -151,7 +151,7 @@ const About = () => {
                    </div>      
                 </div>
             </div>
-        </FadeIn>
+        </FadeIn> */}
               
 
             

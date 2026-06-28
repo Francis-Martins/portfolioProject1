@@ -56,11 +56,11 @@ const Projects = () => {
 
   return (
     <section id="projects" className="relative py-20 bg-black overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute bottom-1/3 left-0 w-96 h-96 bg-primary/20 opacity-20  rounded-full" />
+      {/* <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute bottom-1/3 left-0 w-96 h-96 bg-primary/20 opacity-20  rounded-full  blur-3xl" />
         <div className="absolute top-1/2 right-1/3 w-96 h-96 bg-primary/10 opacity-20 rounded-full blur-3px" />
-        <div className="absolute top-1/3 right-0 w-96 h-96 bg-primary/20 opacity-20 rounded-full"/>
-      </div>
+        <div className="absolute top-1/3 right-0 w-96 h-96 bg-primary/20 opacity-20 rounded-full blur-3xl"/>
+      </div> */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn delay={0}>
@@ -73,7 +73,7 @@ const Projects = () => {
               Featured Projects
             </h2>
             <p className="text-lg text-white/60 max-w-2xl  mx-auto">
-              Showcasing my best work and achievements
+              Showcasing my work and achievements
             </p>
           </div>
         </FadeIn>

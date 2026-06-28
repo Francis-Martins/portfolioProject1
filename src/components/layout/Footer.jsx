@@ -22,9 +22,9 @@ const Footer = () => {
             </div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg;px-8 py-16">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12 ">
                     <FadeIn delay={0}>
-                        <div>
+                        <div className=''>
                             <h3 className="text-3xl font-bold bg-linear-to-r from-primary/80 via-primary/80 bg-clip-text text-transparent ">
                                 {PERSONAL_INFO.name.split(' ')[0]}
                             </h3>
@@ -35,9 +35,9 @@ const Footer = () => {
                             <div className="space-y-3">
                                 <a
                                     href={`mailto:${PERSONAL_INFO.email}`}
-                                    className="group flex items-center gap-3 p-3 bg-white/5 border border-white/10 rounded-xl hover:border-primary/30 transition-all duration-300"
+                                    className="group flex items-center gap-3 p-3 bg-white/5 border border-white/10 rounded-xl hover:border-primary/30 transition-all duration-300 "
                                 >
-                                    <div className="p-2 bg-primary/10 rounded-lg">
+                                    <div className="p-2 bg-primary/10 rounded-lg ">
                                         <Mail className="w-4 h-4 text-primary" />
                                     </div>
                                     <span className="text-white/70 text-sm group-hover:text-white transitions-colors">
@@ -45,11 +45,11 @@ const Footer = () => {
                                     </span>
                                 </a>
 
-                                <div className="flex items-center gap-3 p-3 bg-white/5 border border-white/10 rounded-xl">
+                                <div className="flex items-center gap-3 p-3 bg-white/5 border border-white/10 rounded-xl ">
                                     <div className="p-2 bg-primary/10 rounded-lg">
                                         <MapPin className="w-4 h-4 text-primary" />
                                     </div>
-                                    <span className="text-white/70 text-sm group-hover:text-white transitions-colors">
+                                    <span className="text-white/70 text-sm group-hover:text-white transitions-colors ">
                                         {PERSONAL_INFO.location}
                                     </span>
                                 </div>
@@ -58,11 +58,11 @@ const Footer = () => {
 </FadeIn>
 
             <FadeIn delay={100}>
-                <div>
-                    <h4 className="text-white font-semibold mb-6 text-lg">Quick Links</h4>
-                    <ul className="space-y-3">
+                <div className=''>
+                    <h4 className="text-white font-semibold mb-6 text-lg md:text-center">Quick Links</h4>
+                    <ul className="space-y-3 md:text-center">
                         {NAV_LINKS.map((link) => (
-                            <li key={link.id}>
+                            <li key={link.id} className='md:flex md:justify-center'>
                                 <button
                                     onClick={() => scrollToSection(link.id)}
                                     className="group flex items-center gap-2 text-white/60 hover:text-primary transition-all duration-300"
@@ -77,11 +77,13 @@ const Footer = () => {
             </FadeIn>
 
             <FadeIn delay={200}>
-              <div>
-                <h4 className="text-white font-semibold mb-6 text-lg">Connect With Me</h4>
-                <p className="text-white/60 text-sm mb-6 leading-relaxed">
+              <div className='md:flex md:flex-col md:items-center md: md:p-1'>
+                <h4 className="text-white font-semibold mb-6 text-lg "  >Connect With Me</h4>
+                <a href='#c' className="text-white/60 text-sm mb-6 leading-relaxed md:w-20 md:ml-32  md:text-center md:self-start "
+                
+                >
                    Let's connect and create something amazing together.
-                </p>
+                </a>
                     <div className="flex flex-wrap gap-3">
                             <div className="flex flex-wrap gap-3">
                                 {Object.entries(SOCIAL_LINKS).map(([platform, url]) => {
@@ -115,12 +117,9 @@ const Footer = () => {
 
                 <FadeIn delay={300}>
                     <div className="pt-8 border-t border-white/10">
-                        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                        <div className="flex justify-center">
                             <p className="text-white/50 text-sm">
                                 © {new Date().getFullYear()} {PERSONAL_INFO.name}
-                            </p>
-                            <p className="flex -items-center gap-2 text-white/50 text-sm">
-                                Built with <Heart className="w-4 h-4 text-primary fill-primary animate-pulse" /> using React
                             </p>
                         </div>
                     </div>

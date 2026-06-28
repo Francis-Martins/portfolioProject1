@@ -77,7 +77,7 @@ const ProjectCard = ({ project }) => {
         {metrics && (
           <div className=" flex item-center gap-2 pt-3 border-t border-white/10">
             <TrendingUp className="w-4 h-4 text-xs font-mediium text-primary" />
-            <p className="">{metrics}</p>
+            <p className="text-white/80">{metrics}</p>
           </div>
         )}
       </div>

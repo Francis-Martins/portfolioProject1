@@ -33,6 +33,7 @@ const Skills = () => {
             'Expert': 95,
             'Advanced': 80,
             'Intermediate': 65,
+            "beginner":30
         };
         return levels[level] || 50;
     };
@@ -42,14 +43,15 @@ const Skills = () => {
         const colors = {
             'Expert': 'text-[#8DFF69] bg-[#8DFF69]/20 border-[#8DFF69]/30',
             'Advanced': 'text-cyan-400 bg-cyan-500/20 border-emerald-400/30',
-            'Intermediate': 'text-emerald-400 bg-emerald-500/200 border-emerald-400/30',
+            'intermediate': 'text-emerald-400 bg-emerald-500/200 border-emerald-400/30',
+            'beginner': 'text-red-400 bg-red-500/20 border-red-400/30',
         };
         return colors[level] || 'text-gray-400 bg-gray-500/20 border-gray-500/30';
     }
 
-return <section id="skills" className="relative  py-20 bg-black overflow-hidden blur-3x opacity-50">
+return <section id="skills" className="relative  py-20 bg-black overflow-hidden blur-3x opacity">
         {/* Animated Background Gradients */}
-        <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden opacity-50">
             <div className="absolute top-1/4 left-0 w-96 h-96 bg-primary/10 rounded-full" />
             <div className="absolute bottom-1/4  right-0 w-96 h-96 bg-primary/10 rounded-full blur-3x opacity-50" />
         </div>
@@ -60,13 +62,13 @@ return <section id="skills" className="relative  py-20 bg-black overflow-hidden 
 
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full mb-6">
                         <Icons.Sparkles className="w-4 h-4 text-primary" />
-                        <span className="text-sm text-primary font-medium">My Expertise</span>
+                        <span className="text-sm text-primary font-medium">My Skills</span>
                     </div>
                     <h2 className="text-4xl lg:text-5xl font-normal text-white mb-4">
                         Skills & Technologies
                     </h2>
                     <p className="text-lg text-white/60 max-w-2xl mx-auto">
-                        A comprehensive overview of my technical skills and proficiency levels.
+                        An overview of my technical skills and proficiency levels.
                     </p>
                 </div>
             </FadeIn>

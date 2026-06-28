@@ -46,7 +46,7 @@ const Hero = () => {
             <button 
               onClick={() => scrollToSection('contact')}
               className="inline-flex items-center gap-0 mb-12 group">
-                <div className=" relative z-10 bg-white text-[#212121] rounded-[17px] px-[26px] py-[13px] text-base font-medium border border-white">
+                <div className=" relative z-10 bg-white text-[#212121] rounded-[17px] px-[26px] py-[13px] text-base font-medium border hidden">
                    Get in Touch
                 </div>
             </button>
@@ -80,9 +80,9 @@ const Hero = () => {
           {/* Image Container */}
         <div className="relative rounded-2xl overflow-hidden m-[1px] h-[calc(100%-2px)]">
           <img
-            src="/images/projects/testimonials/developer-potrait.png"
+            src="/images/projects/testimonials/potrait.jpeg "
             alt="Developer at work"
-            className="w-full h-full rounded-lg shadow-lg object-cover"
+            className="w-full h-full rounded-lg shadow-lg object-cover  object-cover grayscale hover:grayscale-0 transition-all duration-500"
           />
         </div>
 

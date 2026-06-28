@@ -92,3 +92,26 @@ body{
   -webkit-box-orient: vertical;
   overflow: hidden;
 }}
+
+@keyframes glow-sweep {
+  0% {
+    background-position: 0% -100%;
+  }
+  100% {
+    background-position: 0% 200%;
+  }
+}
+
+.glow-sweep-text {
+  background: linear-gradient(
+    to bottom,
+    white 0%,
+    var(--color-primary),
+    white 100%
+  );
+  background-size: 100% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: glow-sweep 10s linear infinite;
+}

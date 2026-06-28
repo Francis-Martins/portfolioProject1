@@ -52,12 +52,12 @@ const Contact = () => {
     return (
         <section id="contact" className="relative py-20 bg-black overflow-hidden">
             <div className="absolute inset-0 overflow-hidden">
-                <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 opacity rounded-full blur-3xl" />
-                <div className="absolute bottom-1/4 right-1/4 w-95 h-95 bg-primary/20 opacity-20 rounded-full blur-3xl" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-95 h-95 bg-primary/10 opacity-30 rounded-full blur-3xl" />
+                <div className="absolute top-1/4 left-1/4 w-96 md:left-2/5 h-96 bg-primary/20 opacity rounded-full blur-3xl " />
+                <div className="absolute bottom-1/4 right-1/4 w-95  h-95 bg-primary/20 opacity-20 rounded-full  blur-3xl" />
+                <div className="absolute top-1/2 left-1/2 md:left-3/8 -translate-x-1/2 -translate-y-1/2 w-95 h-95 bg-primary/10 opacity-30 rounded-full  blur-3xl" />
             </div>
 
-            <div className="relative z-10 ma-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <FadeIn delay={0}>
                     <div className="text-center mb-16">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full mb-6 ">
@@ -68,12 +68,12 @@ const Contact = () => {
                             Let's Work Together
                         </h2>
                         <p className="text-lg text-white/60 max-w-2xl mx-auto">
-                            Have a project in mind? Let's discuss how we can help bring it to life.
+                          I'm always open to constructive feedback, discussing new projects, creative ideas, or oppurtunities to be part of my vision. Feel free to reach out.
                         </p>
                     </div>
                 </FadeIn>
 
-                <div className="grid md:grid-cols-2 gap-12">
+                <div className='relative max-w-2xl mx-auto' >
                     <FadeIn delay={100}>
                         <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
                             <form onSubmit={handleSubmit} className="space-y-6">
@@ -143,77 +143,6 @@ const Contact = () => {
                                     </div>
                                 )}
                             </form>
-                        </div>
-                    </FadeIn>
-
-
-                    {/* Contact Info */}
-                    <FadeIn delay={200}>
-                        <div className="space-y-8">
-                            <div>
-                               <h3 className="text-2xl font-semibold text-white mb-4">
-                                    Let's Connect
-                               </h3> 
-                               <p className="text-white/60 leading-relaxed">
-                                 I'm always open to discussing new projects, creative ideas, or oppurtunities to be part of our vision. Feel free to reach out.
-                               </p>
-                            </div>
-                            <div className="space-y-4">
-                                <div className="group relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300">
-                                    <div className="flex items-start gap-4">
-                                        <div className="p-3 bg-linear-to-br from-primary/20 to-primary/20 border border-primary/30 rounded-xl">
-                                            <Mail className="w-6 h-6 text-primary"/>
-                                        </div>
-                                        
-                                        <div className="flex-1">
-                                            <p className="w-6 h-6 text-white/60 mb-1">Email</p>
-                                            <a
-                                                href={`mailto:${PERSONAL_INFO}.email}`}
-                                                className="text-white hover:text-[#A8ff8d] transistion-colors font-medium"
-                                                >
-                                                    {PERSONAL_INFO.email}
-                                                </a>
-                                        </div>
-                                    </div>
-                                    <div className="absolute inset-0 bg-linear-to-br from-primary/0 to-primary0 group-hover:from-primary/5 group-hover:to-primary/5 rounded-2xl transition-all duration-300 pointer-events-none"/>
-                                </div>
-                           
-                           <div className="group relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300">
-                                <div className="flex items-start gap-4">
-                                    <div className="p-3 bg-linear-to-br from-primary/20 to-primary/20 border border-primary/30 rounded-xl">
-                                            
-                                        <MapPin className="w-6 h-6 text-primary "/>
-                                    </div>
-                                    <div className="flex-1">
-                                        <p className="text-smt text-white/60 mb-1">Location</p>
-                                        <p className="text-white font-medium">{PERSONAL_INFO.location}</p>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                        
-                            <div>
-                                <p className="text-sm text-white/60 mb-4">Connect with me</p>
-                                <div className="flex gap-4">
-                                {Object.entries(SOCIAL_LINKS).slice(0,3).map(([platform, url]) =>{
-                                    const Icon = socialIcons[platform];
-                                    return Icon ? (
-                                        <a
-                                        key={platform}
-                                        href={url}
-                                        target="_blank"
-                                        rel="noonpener noreferrer"
-                                        className="p-4 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 hover:border-primary/50 hover:scale-110 transition-all duration-300s group"
-                                        >
-                                            <Icon className = "w-6 h-6 text-white/60 group-hover:text-primary transition-colors" />
-                                        </a>
-                                    ) : null;
-                                }
-                            )
-                                
-                                }
-                                </div>
-                            </div>
                         </div>
                     </FadeIn>
                 </div>

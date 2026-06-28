@@ -1,9 +1,9 @@
 export const PERSONAL_INFO = {
   name: 'Martins',
   title: 'React Developer & UI/UX Enthusiast',
-  email: 'alex@timetoprogram.com',
-  location: 'San Francisco, CA',
-  tagline: 'Crafting seamless digital experiences with modern web technolog...', // TODO: cut off in screenshot
+  email: 'francismartins810@gmail.com',
+  location: 'Port-Harcourt, Nigeria',
+  tagline: 'Crafting seamless digital experiences with modern web technology',
   resume: '/resume.pdf',
   bio: [
     "I'm a passionate React developer with over 3 years of experience building scalable performant web applications. I specialize in creating intuitive user interfaces that combines beautiful design with exceptional funcionality", // TODO: cut off in screenshot
@@ -13,17 +13,17 @@ export const PERSONAL_INFO = {
 };
 
 export const SOCIAL_LINKS = {
-  github: 'https://github.com',
-  linkedin: 'https://linkedin.com/',
-  twitter: 'https://twitter.com',
-  dribbble: 'https://dribbble.com'
+  // github: 'https://github.com/Francis-Martins/',
+  // linkedin: 'www.linkedin.com/in/francis-martins-7a583a309',
+  // twitter: 'https://twitter.com',
+  // dribbble: 'https://dribbble.com'
 };
 
 export const STATS = [
-  { label: 'Years Experience', value: '3+' },
-  { label: 'Projects Completed', value: '50+' },
-  { label: 'Technologies', value: '15+' },
-  { label: 'Client Satisfaction', value: '98%' }
+  // { label: 'Years Experience', value: '3+' },
+  // { label: 'Projects Completed', value: '50+' },
+  // { label: 'Technologies', value: '15+' },
+  // { label: 'Client Satisfaction', value: '98%' }
 ];
 
 export const ABOUT_STATS = [

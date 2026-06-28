@@ -28,14 +28,14 @@ const Services = () => {
                 <div className="text-center mb-16">
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full mb-6">
                         <Wrench className="w-4 h-4 text-primary" />
-                        <span className="text-sm text-primary font-medium tracking-wider uppercase">What I Offer</span>
+                        <span className="text-sm text-primary font-medium tracking-wider uppercase">What I Bring to the Table</span>
                     </div>
                     <h2 className="text-4xl lg:text-5xl font-normal text-white mb-4 max-w-2xl mx-auto">
-                        Built for innovation. Designed for results.
+                        Build for innovation. Design for results.
                     </h2>
-                    <p className="text-lg text-white/60 max-w-xl mx-auto">
+                    {/* <p className="text-lg text-white/60 max-w-xl mx-auto">
                         Comprehensive solutions to transform your ideas i[nto reality...]
-                    </p>
+                    </p> */}
                 </div>
             </FadeIn>
 

@@ -47,18 +47,18 @@ const Testimonials = () => {
                 <div className='text-center mb-16'>
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 mb-6 rounded-full">
                         <Quote className="w-4 h-4 text-primary" />
-                        <span className="text-sm text-primary font-medium tracking-wider uppercase">Testimonials</span>
+                        <span className="text-sm text-primary font-medium tracking-wider uppercase">INSPIRATION</span>
                     </div>
                     <h2 className="text-4xl lg:text-5xl font-normal text-white mb-4 max-w-xl mx-auto">
-                        Trusted by forward-thinking teams
+                        Looking up to forward-thinking teams
                     </h2>
                     <p className="text-lg text-white/60 max-w-xl mx-auto">
-                        Empowering clients with design-driven, high-quali[ty solutions...]
+                        Drawing inspiration from developers and designers who deliver quality and communicate clearly through design.
                     </p>
                 </div>
             </FadeIn>
 
-            <FadeIn delay={100}>
+            {/* <FadeIn delay={100}>
                 <div className="relative">
                     <div
                         ref={scrollContainerRef}
@@ -74,7 +74,6 @@ const Testimonials = () => {
                                 >
                                     <div className="max-w-4xl mx-auto">
                                         <div className="flex flex-col md:flex-row gap-6 items-stretch">
-                                            {/* Image Section */}
                                             <div className="relative w-full md:w-1/3">
                                                 <div className="relative h-72 rounded-2xl overflow-hidden">
                                                     <img
@@ -84,7 +83,6 @@ const Testimonials = () => {
                                                     />
                                                 </div>
 
-                                                {/* Stat Badge Overlay */}
                                                 <div className="absolute bottom-4 left-4 right-4">
                                                     <div className="bg-black/60 rounded-xl p-4 shadow-lg">
                                                         <div className="">
@@ -99,7 +97,6 @@ const Testimonials = () => {
                                                 </div>
                                             </div>                                         
                                             <div className="flex-1 flex flex-col justify-between py-4">
-                                              {/* Quote */}
                                               <div className="mb-6">
                                                   <Quote className="w-7 h-7 text-primary mb-4 opacity-50" />
                                                   <p className="text-lg md:text-xl text-white leading-relaxed">
@@ -164,7 +161,7 @@ const Testimonials = () => {
                         <ChevronRight className="" />
                     </button>
                 </div>
-            </FadeIn>
+            </FadeIn> */}
         </div>
     </section>
     )

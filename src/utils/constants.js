@@ -6,9 +6,11 @@ export const PERSONAL_INFO = {
   tagline: 'Crafting seamless digital experiences with modern web technology',
   resume: '/resume.pdf',
   bio: [
-    "I'm a passionate React developer with over 3 years of experience building scalable performant web applications. I specialize in creating intuitive user interfaces that combines beautiful design with exceptional funcionality", // TODO: cut off in screenshot
-    "My expertise spans the entire frontend ecosystem, from React and Nex.js to TypeScript and modern CSS frameworks. I'm committed to writing clean , maintainable code and staying current with the latest web technologies.", // TODO: cut off in screenshot
-    "When I'm not coding, you'll find me contributing to open-source projects writing technical articles, uor exploring new design trends." // TODO: cut off in screenshot
+    "I'm a React developer with 1+ year of experience building web applications. I enjoy creating interfaces that combine clean design with solid functionality, and I'm always working to get better at both.",
+
+"My experience so far spans React, Next.js, TypeScript, and modern CSS frameworks. I care about writing clean, readable code, and I'm constantly learning from how other developers approach problems.",
+
+"When I'm not coding, you'll find me contributing to open-source projects, writing about what I'm learning, or exploring new design trends."
   ]
 };
 
